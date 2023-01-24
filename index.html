@@ -1,205 +1,859 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- =======================================
-                Preload, Preconnect, Prefetch links - Start
-            ======================================== -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <!-- =======================================
-                Preload, Preconnect, Prefetch links - End
-            ======================================== -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-            <!-- =======================================
-                External Resource links - Start
-            ======================================== -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-            <!-- =======================================
-                External Resource links - End
-            ======================================== -->
-
-            <!-- =======================================
-                Above fold CSS - Start
-            ======================================== -->
-
-            <style>
-                html {
-                    --primary-font: 'Playfair Display', serif;
-                    --secondary-font: 'Metropolis',Arial,sans-serif;
-
-                    font-family: var(--secondary-font);
-                    font-weight: normal;
-                }
-
-                .main-image,
-                .main-image img {
-                    display: inline-block;
-                    width: 100%;
-                    height: auto;
-                }
-
-                .main-image {
-                    max-width: 300px;
-                }
-
-                .h1,.h2 {
-                    font-family: var(--primary-font);
-                    font-weight: bold;
-                }
-
-                .p {
-                    font-family: var(--secondary-font);
-                    font-weight: normal;
-                }
-
-                @media (min-width: 768px) {
-                    .main-image {
-                        max-width: 500px;
-                    }
-                }
-
-            </style>
-
-            <!-- =======================================
-                Above fold CSS - End
-            ======================================== -->
-
-
-            <!-- =======================================
-                Main Local Stylesheet Resource - Start
-            ======================================== -->
-            <link rel="stylesheet" href="assets/css/font.css">
-            <!-- =======================================
-                Main Local Stylesheet Resource - End
-            ======================================== -->
+    <!-- ======================================== -->
+    <!-- Preload, Preconnect, Prefetch links - Start -->
+    <!-- ======================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ======================================== -->
+    <!-- Preload, Preconnect, Prefetch links - End -->
+    <!-- ======================================== -->
 
 
 
-            <!-- =======================================
-                Title and Description - Start
-            ======================================== -->
-
-            <title>Homestead Studio</title>
-            <meta name="description" content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
-
-            <!-- =======================================
-                Title and Description - End
-            ======================================== -->
+    <!-- ======================================== -->
+    <!-- External Resource links - Start -->
+    <!-- ======================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ======================================== -->
+    <!-- External Resource links - End -->
+    <!-- ======================================== -->
 
 
 
-            <!-- =======================================
-                Social Media & SEO tags - Start
-            ======================================== -->
+    <!-- ======================================== -->
+    <!-- Above fold CSS - Start -->
+    <!-- ======================================== -->
 
-            <meta property="og:title" content="Homestead Studio">
-            <meta property="og:description" content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
-            <meta property="og:image" content="assets/media/images/opengraph.jpg">
-            <meta property="og:locale" content="en">
-            <meta property="og:type" content="website">
-            <!-- <meta property="og:url" content="{{ pages.url }}"> -->
+    <style>
+        html {
+            --primary-font: 'Playfair Display', serif;
+            --secondary-font: 'Metropolis', Arial, sans-serif;
 
-            <!-- <link rel="canonical" href="{{ pages.url }}"> -->
+            font-family: var(--secondary-font);
+            font-weight: normal;
+        }
 
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="Homestead Studio">
-            <meta name="twitter:description" content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
-            <meta name="twitter:image" content="assets/media/images/opengraph.jpg">
+        .main-image,
+        .main-image img {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }
 
-            <!-- Schema markup - Start -->
-            <script type="application/ld+json">
-                {
-                    "@context": "http://schema.org",
-                    "@type": "WebSite",
-                    "name": "Homestead Studio",
-                    "url": "/",
-                }
-            </script>
-            <!-- Schema markup - End -->
+        .main-image {
+            max-width: 300px;
+        }
 
-            <meta name="robots" content="index, follow" />
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
+            font-family: var(--primary-font);
+            font-weight: 700;
+        }
 
-            <!-- =======================================
-                Social Media & SEO tags - End
-            ======================================== -->
+        .page-title {
+            font-size: 3rem;
+            font-family: var(--primary-font);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .p {
+            font-family: var(--secondary-font);
+            font-weight: normal;
+        }
+
+        .company-logo {
+            color: white;
+        }
+
+
+        @media (min-width: 768px) {
+            .main-image {
+                max-width: 500px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .page-title {
+                font-size: 5rem;
+            }
+        }
+    </style>
+    <!-- ======================================== -->
+    <!-- Above fold CSS - End -->
+    <!-- ======================================== -->
 
 
 
-            <!-- =======================================
-                Site additional information - Start
-            ======================================== -->
+    <!-- ======================================== -->
+    <!-- Local Stylesheet Resource - Start -->
+    <!-- ======================================== -->
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- ======================================== -->
+    <!-- Local Stylesheet Resource - End -->
+    <!-- ======================================== -->
 
-            <!-- Theme color - Start -->
-            <meta name="theme-color" content="#ffffff">
-            <!-- Theme color - End -->
 
-            <!-- Favicon - Start -->
-            <link rel="icon" href="assets/media/icons/favicon.svg" sizes="any" type="image/svg+xml">
-            <!-- Favicon - End -->
 
-            <!-- Site Manifest - Start -->
-            <!-- <link rel="manifest" href="/static/site.webmanifest"> -->
-            <!-- Site Manifest - End -->
+    <!-- ======================================== -->
+    <!-- Title and Description - Start -->
+    <!-- ======================================== -->
 
-            <!-- =======================================
-                Site additional information - End
-            ======================================== -->
-        </head>
-    </head>
-    <body>
-        <header class="">
-            <div class="container pt-5 pb-5 d-flex">
-                <div class="row align-items-center">
-                    <div class="col-12 col-sm-12 col-md-6 text-center">
-                        <picture class="main-image pt-4 pb-4 mx-auto">
-                            <source srcset="assets/media/images/zack-avif.avif" type="image/avif">
-                            <source srcset="assets/media/images/zack-webp.webp" type="image/webp">
-                            <img src="assets/media/images/zack-png.png" width="300" height="300" alt="Zack on cam 😄" loading="eager">
-                        </picture>
+    <title>Homestead Studio</title>
+    <meta name="description"
+        content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
+
+    <!-- ======================================== -->
+    <!-- Title and Description - End -->
+    <!-- ======================================== -->
+
+
+
+    <!-- ======================================== -->
+    <!-- Social Media & SEO tags - Start -->
+    <!-- ======================================== -->
+
+    <meta property="og:title" content="Homestead Studio">
+    <meta property="og:description" content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
+    <meta property="og:image" content="assets/media/images/opengraph.jpg">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="{{ pages.url }}"> -->
+
+    <!-- <link rel="canonical" href="{{ pages.url }}"> -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Homestead Studio">
+    <meta name="twitter:description"
+        content="Homestead Studio is a digital growth agency that helps eCommerce businesses scale">
+    <meta name="twitter:image" content="assets/media/images/opengraph.jpg">
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ======================================== -->
+    <!-- Social Media & SEO tags - End -->
+    <!-- ======================================== -->
+
+
+    <!-- ======================================== -->
+    <!-- Site additional information - Start -->
+    <!-- ======================================== -->
+
+    <!-- Theme color - Start -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Theme color - End -->
+
+    <!-- Favicon - Start -->
+    <link rel="icon" href="assets/media/icons/favicon.svg" sizes="any" type="image/svg+xml">
+    <!-- Favicon - End -->
+
+    <!-- Site Manifest - Start -->
+    <!-- <link rel="manifest" href="/static/site.webmanifest"> -->
+    <!-- Site Manifest - End -->
+
+    <!-- ======================================== -->
+    <!-- Site additional information - Start -->
+    <!-- ======================================== -->
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
+        <div class="container">
+            <a href="#" class="nav-brand">
+                <div class="company-logo-container">
+                    <svg class="icon company-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 101">
+                        <!-- Color #212529 -->
+                        <use xlink:href="assets/media/icons/icons.svg#HomeSteadStudioLogo"></use>
+                    </svg>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-md-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#testimonial">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#features">Features &amp; Benefits</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#process">Process</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container pt-5 pb-5 d-flex">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-md-5 text-center">
+                    <picture class="main-image pt-4 pb-4 mx-auto">
+                        <source srcset="assets/media/images/zack-avif.avif" type="image/avif">
+                        <source srcset="assets/media/images/zack-webp.webp" type="image/webp">
+                        <img src="assets/media/images/zack-png.png" width="300" height="300" alt="Zack on cam 😄" loading="eager">
+                    </picture>
+                </div>
+                <div class="col-12 col-sm-12 col-md-7">
+                    <h1 class="text-center text-sm-center text-md-start page-title">Lorem ipsum dolor&nbsp;sit amet, consectetur adipiscing eli</h1>
+                    <ul class="mt-3 mb-3">
+                        <li>
+                            <p class="p text-sm-start text-md-start">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </li>
+                        <li>
+                            <p class="p text-sm-start text-md-start">enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        </li>
+                        <li>
+                            <p class="p text-sm-start text-md-start">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </li>
+                        <li>
+                            <p class="p text-sm-start text-md-start">xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </li>
+                    </ul>
+                    <div class="col-12 text-center text-sm-center text-md-start">
+                        <button class="btn btn-dark text-uppercase fs-2 mx-auto rounded-0 px-4">Free Consultation</button>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <h1 class="h1 text-sm-center text-md-start">Lorem ipsum dolor sit amet, consectetur adipiscing eli</h1>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5" id="logoBar">
+            <div class="container">
+                <h2 class="h2 mb-3 text-center section-title text-capitalize">Sed ut perspiciatis unde omnis iste</h2>
+
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Facebook Ads">
+                        <svg class="text-center ads-logo ads-facebook" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 280 75">
+                            <use xlink:href="assets/media/icons/icons.svg#facebookAds"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="TikTok Ads">
+                        <svg class="text-center ads-logo ads-tiktok" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 280 75">
+                            <use xlink:href="assets/media/icons/icons.svg#tiktokAds"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Google Ads">
+                        <svg class="text-center ads-logo ads-google" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 280 75">
+                            <use xlink:href="assets/media/icons/icons.svg#googleAds"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Snapchat Ads">
+                        <svg class="text-center ads-logo ads-snapchat" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 280 75">
+                            <use xlink:href="assets/media/icons/icons.svg#snapchatAds"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Youtube Ads">
+                        <svg class="text-center ads-logo ads-youtube" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 199 29">
+                            <use xlink:href="assets/media/icons/icons.svg#youtubeAds"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Shopify">
+                        <svg class="text-center ads-logo ads-shopify" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 232 75">
+                            <use xlink:href="assets/media/icons/icons.svg#shopify"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto p-2 ads-logo-item" title="Klaviyo">
+                        <svg class="text-center ads-logo ads-klaviyo" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 224 75">
+                            <use xlink:href="assets/media/icons/icons.svg#klaviyo"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="testimonial">
+            <div class="container">
+                <div class="col-12 col-sm-12 col-md-9 text-center  mx-auto">
+                    <h2 class="h2 mb-5 text-center text-capitalize section-title">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h2>
+                </div>
+
+
+                <div class="row">
+                    <div class="py-2 col-12 col-sm-12 col-md-7">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/GtL1huin9EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="py-2 col-12 col-sm-12 col-md-5">
+                        <blockquote class="blockquote">
+                            <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <use xlink:href="assets/media/icons/icons.svg#leftQuote"></use>
+                            </svg>
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <use xlink:href="assets/media/icons/icons.svg#rightQuote"></use>
+                            </svg>
+                        </blockquote>
+
+                        <figcaption class="blockquote-footer">voluptatem accusantium...</figcaption>
+
                         <ul class="mt-3 mb-3">
-                            <li><p class="p text-sm-center text-md-start">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
-                            <li><p class="p text-sm-center text-md-start">enim ad minim veniam, quis nostrud exercitation ullamco laboris</p></li>
-                            <li><p class="p text-sm-center text-md-start">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p></li>
-                            <li><p class="p text-sm-center text-md-start">xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></li>
+                            <li>
+                                <p class="p text-sm-start text-md-start">architecto beatae vitae dicta sunt explicabo</p>
+                            </li>
+                            <li>
+                                <p class="p text-sm-start text-md-start">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+                            </li>
+                            <li>
+                                <p class="p text-sm-start text-md-start">Daut odit aut fugit, sed quia consequuntur magni dolores eos</p>
+                            </li>
                         </ul>
-                        <button class="btn btn-dark text-uppercase fs-2">Free Consultation</button>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="py-2 col-12 col-sm-12 col-md-4">
+                        <div class="card rounded-0">
+                            <div class="card-header py-4 text-center">
+                                <svg class="icon logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <use xlink:href="assets/media/icons/icons.svg#googleLogo"></use>
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#leftQuote"></use>
+                                    </svg>
+                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#rightQuote"></use>
+                                    </svg>
+                                </blockquote>
+
+                                <figcaption class="blockquote-footer">Zack Miller, Founder/ CEO of Google
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 col-12 col-sm-12 col-md-4">
+                        <div class="card rounded-0">
+                            <div class="card-header py-4 text-center">
+                                <svg class="icon logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <use xlink:href="assets/media/icons/icons.svg#facebookLogo"></use>
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#leftQuote"></use>
+                                    </svg>
+                                    ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#rightQuote"></use>
+                                    </svg>
+                                </blockquote>
+
+                                <figcaption class="blockquote-footer">Zack Miller, Founder/ CEO of Facebook
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 col-12 col-sm-12 col-md-4">
+                        <div class="card rounded-0">
+                            <div class="card-header py-4 text-center">
+                                <svg class="icon logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <use xlink:href="assets/media/icons/icons.svg#tiktokLogo"></use>
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#leftQuote"></use>
+                                    </svg>
+                                    ...Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                                    <svg class="icon quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <use xlink:href="assets/media/icons/icons.svg#rightQuote"></use>
+                                    </svg>
+                                </blockquote>
+
+                                <figcaption class="blockquote-footer">Zack Miller, Founder/ CEO of TikTok
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="mt-5 col-12 text-center">
+                        <a href="#" class="btn btn-dark text-uppercase fs-2 mx-auto rounded-0 px-4">START TODAY</a>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <div class="container-fluid pt-4 pb-4 bg-dark text-white">
-                <h2 class="h2 text-center">Sed ut perspiciatis unde omnis iste</h2>
-                <div class="d-flex flex-wrap">
-                    <div class="flex-row">
-                        <div class="p-2" title="Facebook Ads"></div>
-                        <div class="p-2" title="TikTok Ads"></div>
-                        <div class="p-2" title="Google Ads"></div>
-                        <div class="p-2" title="Snapchat Ads"></div>
-                        <div class="p-2" title="Youtube Ads"></div>
-                        <div class="p-2" title="Shopify"></div>
-                        <div class="p-2" title="Klaviyo"></div>
+        <section class="py-5" id="features">
+            <div class="container">
+                <div class="col-12 col-sm-12 col-md-9 text-center  mx-auto">
+                    <h2 class="section-title text-capitalize text-center">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+
+                    <p class="p pt-2 text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+
+
+                <br>
+
+                <div class="row">
+
+                    <div class="py-2 col-12 col-sm-12 col-md-6">
+                        <div class="col-12 text-center">
+                            <picture class="illustration">
+                                <source srcset="assets/media/illustrations/time.avif" type="image/avif">
+                                <source srcset="assets/media/illustrations/time.webp" type="image/webp">
+                                <img src="assets/media/illustrations/time.png" width="200" height="200" alt="Time 😁" loading="eager">
+                            </picture>
+
+                            <div class="col-7 text-center mx-auto">
+                                <h3 class="h3 text-capitalize">similique sunt in</h3>
+                                <p class="p pt-2">Trigger the right emails at the right time with complex marketing automation flows.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="py-2 col-12 col-sm-12 col-md-6">
+                        <div class="col-12 text-center">
+                            <picture class="illustration">
+                                <source srcset="assets/media/illustrations/bulb.avif" type="image/avif">
+                                <source srcset="assets/media/illustrations/bulb.webp" type="image/webp">
+                                <img src="assets/media/illustrations/bulb.png" width="200" height="200" alt="Bulb 😁" loading="eager">
+                            </picture>
+                            <div class="col-7 text-center mx-auto">
+                                <h3 class="h3 text-capitalize">culpa qui officia</h3>
+                                <p class="p pt-2">Change the content of emails depending on who is reading them.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-2 col-12 col-sm-12 col-md-6">
+                        <div class="col-12 text-center">
+                            <picture class="illustration">
+                                <source srcset="assets/media/illustrations/pin.avif" type="image/avif">
+                                <source srcset="assets/media/illustrations/pin.webp" type="image/webp">
+                                <img src="assets/media/illustrations/pin.png" width="200" height="200" alt="Pin 😁" loading="eager">
+                            </picture>
+
+                            <div class="col-7 text-center mx-auto">
+                                <h3 class="h3 text-capitalize">deserunt mollitia animi</h3>
+                                <p class="p pt-2">We&apos;ll write email copy that will build relationships and increase sales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-2 col-12 col-sm-12 col-md-6">
+                        <div class="col-12 text-center">
+                            <picture class="illustration">
+                                <source srcset="assets/media/illustrations/start.avif" type="image/avif">
+                                <source srcset="assets/media/illustrations/start.webp" type="image/webp">
+                                <img src="assets/media/illustrations/start.png" width="200" height="200" alt="Start 😁" loading="eager">
+                            </picture>
+
+                            <div class="col-7 text-center mx-auto">
+                                <h3 class="h3 text-capitalize">laborum et dolorum</h3>
+                                <p class="p pt-2">All emails will be designed to reflect and represent your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 col-12 text-center">
+                        <a href="#" class="btn btn-dark text-uppercase fs-2 mx-auto rounded-0 px-4">LET&apos;S DO THIS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="process">
+            <div class="container">
+                <div class="col-12 col-sm-12 col-md-9 text-center  mx-auto">
+                    <h2 class="section-title text-capitalize text-center">Et harum quidem rerum facilis est et expedita distinctio</h2>
+                    <p class="p pt-2 text-center">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="py-2 col-12 row">
+                        <div class="col-12 col-sm-12 col-md-6 position-relative">
+                            <div class="py-2 col-12 sticky-top">
+                                <h3 class="h3 text-capitalize">Step 1</h3>
+
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="accordion" id="accordionOne">
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremOne" aria-expanded="true" aria-controls="loremOne">
+                                            <h4>Lorem ipsum dolor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse show" id="loremOne">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremTwo" aria-expanded="true" aria-controls="loremTwo">
+                                            <h4>Consectetur adipiscing elit</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremTwo">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremThree" aria-expanded="true" aria-controls="loremThree">
+                                            <h4>Do eiusmod tempor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremThree">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+
+                                            <p class="p">purchases, limited time offer, or something more specific. We&apos;ll run tests to determine the right offer for your flow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-2 mt-4 col-12 row">
+                        <div class="col-12 col-sm-12 col-md-6 position-relative">
+                            <div class="py-2 col-12 sticky-top">
+                                <h3 class="h3 text-capitalize">Step 2</h3>
+
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="accordion" id="accordionTwo">
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremFour" aria-expanded="true" aria-controls="loremFour">
+                                            <h4>Lorem ipsum dolor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse show" id="loremFour">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremFive" aria-expanded="true" aria-controls="loremFive">
+                                            <h4>Consectetur adipiscing elit</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremFive">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremSix" aria-expanded="true" aria-controls="loremSix">
+                                            <h4>Do eiusmod tempor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremSix">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-2 mt-4 col-12 row">
+                        <div class="col-12 col-sm-12 col-md-6 position-relative">
+                            <div class="py-2 col-12 sticky-top">
+                                <h3 class="h3 text-capitalize">Step 3</h3>
+
+                                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="accordion" id="accordionThree">
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremSeven" aria-expanded="true" aria-controls="loremSeven">
+                                            <h4>Lorem ipsum dolor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse show" id="loremSeven">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremEight" aria-expanded="true" aria-controls="loremEight">
+                                            <h4>Consectetur adipiscing elit</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremEight">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item rounded-0">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#loremNine" aria-expanded="true" aria-controls="loremNine">
+                                            <h4>Do eiusmod tempor</h4>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="loremNine">
+                                        <div class="accordion-body">
+                                            <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                            <p class="p">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="contact">
+            <div class="container">
+                <div class="col-12 col-sm-12 col-md-9 text-center  mx-auto">
+                    <h2 class="section-title text-capitalize text-center">Contact Us</h2>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-9 mx-auto">
+                        <form class="row justify-content-center" action="#">
+                            <fieldset class="col-12 row">
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="Name" class="form-label fw-bold text-uppercase">Name</label>
+                                    <input class="form-control" type="text" name="Name" id="Name" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="Email" class="form-label fw-bold text-uppercase">Email</label>
+                                    <input class="form-control" type="email" name="Email" id="Email" placeholder="Enter a valid email" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="Company" class="form-label fw-bold text-uppercase">Company</label>
+                                    <input class="form-control" type="text" name="Company" id="Company" placeholder="Your company name" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="Website" class="form-label fw-bold text-uppercase">Website</label>
+                                    <input class="form-control" type="text" name="Website" id="Website" placeholder="Your website URL" required>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="mt-3 col-12 row">
+                                <div class="py-2 col-12">
+                                    <label for="Heard" class="form-label fw-bold text-uppercase">How did you hear about Homestead?</label>
+                                    <input class="form-control" type="text" name="Heard" id="Heard" placeholder="Word of mouth, Twitter, Podcast, etc" required>
+                                </div>
+
+                                <div class="py-2 col-12">
+                                    <label for="lookingFor" class="form-label fw-bold text-uppercase">What are you looking for in a growth marketing partner?</label>
+                                    <textarea class="form-control" name="lookingFor" id="lookingFor" cols="30" rows="10" placeholder="Your ideal partner is..."></textarea>
+                                </div>
+                            </fieldset>
+
+                            <hr class="col-12 mt-5 border-2 row">
+
+                            <fieldset class="mt-3 col-12 row">
+                                <div class="form-text fw-bold fs-4">Technical Questions</div>
+                                <p class="form-text mb-0 fs-5">Please provide an overview of your advertising and growth goals.</p>
+
+                                <br>
+                                <br>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="adBudget" class="form-label fw-bold text-uppercase">Monthly Ad budget</label>
+                                    <select name="adBudget" id="adBudget" class="form-select">
+                                        <option value="" disabled>Your monthly ad budget</option>
+                                        <option value="$0-$15k">$0 - $15k</option>
+                                        <option value="$15 - $50k">$15 - $50k</option>
+                                        <option value="$50k - $100k">$50k - $100k</option>
+                                        <option value="$100k-$500k">$100k-$500k</option>
+                                        <option value="$500k+">$500k+</option>
+                                    </select>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="annaulRevenue" class="form-label fw-bold text-uppercase">Annual Revenue</label>
+                                    <select name="annaulRevenue" id="annaulRevenue" class="form-select" placeholder="Your annual revenue">
+                                        <option value="" disabled>Your annual revenue</option>
+                                        <option value="$0-$1M">$0 - $1M</option>
+                                        <option value="$1M - $5M">$1M - $5M</option>
+                                        <option value="$5M - $10M">$5M - $10M</option>
+                                        <option value="$10M - $50M">$10M - $50M</option>
+                                    </select>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="fbSpend" class="form-label fw-bold text-uppercase">Facebook Monthly Spend</label>
+                                    <input class="form-control" type="text" name="fbSpend" id="fbSpend" placeholder="$50k" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="fbGoal" class="form-label fw-bold text-uppercase">Facebook ROAS Goal</label>
+                                    <input class="form-control" type="text" name="fbGoal" id="fbGoal" placeholder="2.5" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="snapSpend" class="form-label fw-bold text-uppercase">Snapchat Monthly Spend</label>
+                                    <input class="form-control" type="text" name="snapSpend" id="snapSpend" placeholder="$50k" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="snapGoal" class="form-label fw-bold text-uppercase">Snapchat ROAS Goal</label>
+                                    <input class="form-control" type="text" name="snapGoal" id="snapGoal" placeholder="2.5" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="tiktokSpend" class="form-label fw-bold text-uppercase">TikTok Monthly Spend</label>
+                                    <input class="form-control" type="text" name="tiktokSpend" id="tiktokSpend" placeholder="$50k" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="tiktokGoal" class="form-label fw-bold text-uppercase">TikTok ROAS Goal</label>
+                                    <input class="form-control" type="text" name="tiktokGoal" id="tiktokGoal" placeholder="2.5" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="googleSpend" class="form-label fw-bold text-uppercase">Google Monthly Spend</label>
+                                    <input class="form-control" type="text" name="googleSpend" id="googleSpend" placeholder="$50k" required>
+                                </div>
+
+                                <div class="py-2 col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="googleGoal" class="form-label fw-bold text-uppercase">Google ROAS Goal</label>
+                                    <input class="form-control" type="text" name="googleGoal" id="googleGoal" placeholder="2.5" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="emailMarketing" class="form-label fw-bold text-uppercase">Who manages your email marketing campaigns?</label>
+                                    <input class="form-control" type="text" name="emailMarketing" id="emailMarketing" placeholder="In-house or agency/contractor" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="websiteUpdates" class="form-label fw-bold text-uppercase">Who manages your website updates?</label>
+                                    <input class="form-control" type="text" name="websiteUpdates" id="websiteUpdates" placeholder="In-house or agency/contractor" required>
+                                </div>
+
+                                <div class="py-2 col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label for="creativeAssets" class="form-label fw-bold text-uppercase">Who manages shooting creative assets for ads, emails, and web?</label>
+                                    <input class="form-control" type="text" name="creativeAssets" id="creativeAssets" placeholder="In-house or agency/contractor" required>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mt-3 col-12 px-4 row">
+                                <button class="btn btn-dark text-uppercase fs-5 mx-auto rounded-0 px-4" type="submit">Submit</button>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
 
-        </main>
+        </section>
+    </main>
 
+    <footer class="py-5 bg-dark">
+        <div class="container text-center">
+            <div class="company-logo-alt-container mx-auto">
+                <svg class="icon company-logo-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <use xlink:href="assets/media/icons/icons.svg#companyLogoAlt" fill="white"></use>
+                </svg>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <address class="p fs-6 text-light">2705 S Lake Park Rd<br>Suite 103<br>Appleton, WI 54915</address>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <p class="p fs-6 text-light">&copy; <a class="link-light text-decoration-none" href="#">Homestead Studio</a></p>
+                </div>
+            </div>
 
+        </div>
+    </footer>
 
-    </body>
+</body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </html>
